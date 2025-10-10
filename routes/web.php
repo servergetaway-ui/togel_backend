@@ -14,6 +14,8 @@
 Route::get('/', function () {
     return redirect('login');
 });
+// Public lottery landing page
+Route::get('/lotere', 'FrontEnd\HomeController@homePage')->name('lotere');
 //Route::get('/', 'FrontEnd\HomeController@homePage')->name('home.page');
 /*Route::group(array('namespace' => 'FrontEnd'), function () {
     Route::get('/', 'HomeController@home')->name('frontend.home');
